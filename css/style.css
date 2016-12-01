@@ -1,0 +1,297 @@
+/* -----------------Etiquetas principales---------------------- */
+html{
+	min-height: 100%;
+	box-sizing: :border-box;
+}
+body{
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+	min-height: 100%;
+	//background-color: #efefef;
+	background-image: linear-gradient(#efefef,#555);
+}
+.contenido{
+	max-width: 960px;
+	margin:auto;
+	margin-top: 40px;
+}
+#c-derecha{
+	margin-top:0;
+	padding-top:0;
+	background-color:white;
+	width:73%;
+	float:right;
+	border-top-right-radius: 60px;
+}
+#c-izquierda{
+	max-width: 250px;
+	width:18%;
+	float:left;
+	position:fixed;
+
+}
+.w-clearfix:before , .w-clearfix:after {
+   	content: " ";
+	display: table;
+}
+ 
+.w-clearfix:after {
+    clear: both;
+}
+/* -----------------Etiquetas secundarias---------------------- */
+.titulo-seccion{
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.linea {
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    width: 14%;
+    height:80px;
+    margin-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.nombre{
+	color:#488afb;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	line-height: 22px;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+.profesion{
+	color:#777;
+	font-size:15px;
+	line-height: 21px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 0px
+}
+p,li{
+	font-size: 12px;
+	line-height: 22px;
+	font-weight: 300;
+	color: #777;
+}
+.titulo{
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+	text-align: center;
+	width:35%;
+	padding:8px 0px;
+	display: inline-block;
+}
+.valores{
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	width:63%;
+	padding:8px 0px;
+	display: inline-block;
+}
+
+.seccion-titulo{
+	padding: 30px 10px 2px 40px;
+    position:relative;
+}
+.sobreMi,
+.estudios,
+.experiencia,
+.hobbies ,
+.portfolio{
+    padding: 20px 40px 30px 40px;
+    border-bottom: 3px solid #efefef;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+.item{
+	display:inline-block;
+}
+.estudios h4{
+	margin-left: 20px;
+}
+.estudios ul{
+	margin-left: 30px
+}
+a:link{
+	text-decoration: none;
+}
+a{
+	color: #488afb;
+}
+a:hover{
+	color: #666;
+}
+.datos{
+	width: 49%;
+    display:inline-block;
+    border: 1px solid #efefef;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.datos li{
+	border-bottom: 1px solid #efefef;
+    background: #fafafa;
+}
+/* -----------------Menu de Navegacion---------------------- */
+nav li a p{
+	color: #85878b;
+    font-size: 12px;
+    line-height: 44px;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0;
+    margin-right: 4px;
+}
+nav li:hover a p{
+	color:#FFF;
+}
+#c-izquierda .item{
+	padding:0px 10px;
+	margin:0px;
+}
+.hipervinculo{
+	background-color:#333;
+	display: block;
+	margin:0;
+	padding:0;
+}
+.hipervinculo:hover{
+	background-color:#000;
+}
+#redes{
+	background-color:#AAA;
+	display: block;
+
+}
+#redes:hover{
+	background-color: #FFF;
+}
+.profile{
+	width:100%;
+	vertical-align: bottom;
+	border-top-left-radius: 60px;
+}
+#icono-sobreMi{
+	margin-top:7px;
+	background-image:url("../images/icons/sobre-mi.png");
+	height:30px;
+	width:30px;
+	background-position: center;
+	background-size: cover;
+	float:left;
+}
+#icono-estudios{
+	margin-top:7px;
+	background-image:url("../images/icons/educacion.png");
+	height:30px;
+	width:30px;
+	background-position: center;
+	background-size: cover;
+	float:left;
+}
+#icono-experiencia{
+	margin-top:7px;
+	background-image:url("../images/icons/experiencia-laboral.png");
+	height:30px;
+	width:30px;
+	background-position: center;
+	background-size: cover;
+	float:left;
+}
+#icono-hobbies{
+	margin-top:7px;
+	background-image:url("../images/icons/hobbie.png");
+	height:30px;
+	width:30px;
+	background-position: center;
+	background-size: cover;
+	float:left;
+}
+.hipervinculo:hover #icono-sobreMi{
+	background-image:url("../images/icons/sobre-mi-hover.png");
+}
+.hipervinculo:hover #icono-estudios{
+	background-image:url("../images/icons/educacion-hover.png");
+}
+.hipervinculo:hover #icono-experiencia{
+	background-image:url("../images/icons/experiencia-laboral-hover.png");
+}
+.hipervinculo:hover #icono-hobbies{
+	background-image:url("../images/icons/hobbie-hover.png");
+}
+/* -----------------Hobbies---------------------- */
+.leer{
+	background-image:url("../images/lectura.jpg");
+	height: 140px;
+	width:100%;
+	background-position: 0;
+	background-size: cover;
+	border:2px solid #666;
+}
+.series{
+	background-image:url("../images/series.jpg");
+	min-height: 140px;
+	width:100%;
+	background-position: 0;
+	background-size: cover;
+	border:2px solid #666;
+}
+
+.programacionVideojuegos{
+	background-image:url("../images/programacionVideojuegos.jpg");
+	height: 140px;
+	width:100%;
+	background-position: 0;
+	background-size: cover;
+	border:2px solid #666;
+}
+.hobbies .item{
+	width:22%;
+	margin:1%;
+	height:200px;
+	vertical-align: top;
+}
+.hobbies .item .descripcion{
+	height:50px;
+	color:#777;
+	text-align: center;
+}
+.videojuegos{
+	background-image: url("../images/videojuegos.jpg");
+	height: 140px;
+	width: 100%;
+	background-position: 0;
+	background-size: cover;
+	border: 2px solid #666;
+}
+.portfolio div{
+	padding:3%;
+	display: block;
+}
+.portfolio img{
+	max-width: 40%;
+	margin-right: 3%;
+	float:left;
+}
+.portfolio a{
+	float:left;
+}
+.portfolio p{
+	margin:0;
+}
+.portfolio h2{
+	margin-top: 0;
+	margin-bottom: 2%;
+}
